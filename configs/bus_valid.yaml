@@ -1,0 +1,22 @@
+# Data Settings
+phase: valid
+pickle_file_path: ./Dataset/bus/bus_train_test_names.pkl
+model_weight: ./ckpt/valid_bus/best_model.pth
+snapshot_path: ./ckpt/valid_bus
+save_seg_img_path: ./ckpt/valid_bus/predicted_masks
+
+# Valid Settings
+GPUs: [0]
+num_workers: 4
+batch_size: 1
+seed: 2333
+
+# Model Settings
+in_channel: 4
+out_channels: 4
+num_res_blocks: 2
+ch: 32
+ch_mult: [1,2,4,4]
+
+# Loss Settings
+w_rec: 1

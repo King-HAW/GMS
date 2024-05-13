@@ -1,0 +1,19 @@
+name: GMS
+channels:
+  - pytorch
+  - defaults
+dependencies:
+  - python=3.9
+  - pip:
+      - albumentations
+      - einops>=0.6.1
+      - numpy>=1.24.4
+      - pillow>=9.5.0
+      - omegaconf
+      - pyyaml
+      - pytorch-lightning
+      - torch
+      - monai
+      - tensorboardX
+      - pandas
+      - scikit-learn

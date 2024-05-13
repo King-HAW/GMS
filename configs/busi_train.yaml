@@ -1,0 +1,26 @@
+# Data Settings
+phase: train
+pickle_file_path: ./Dataset/busi/busi_train_test_names.pkl
+snapshot_path: ./ckpt/
+
+# Training Settings
+epochs: 1000
+GPUs: [0]
+num_workers: 8
+batch_size: 8
+save_freq: 25
+seed: 2333
+
+# Model Settings
+in_channel: 4
+out_channels: 4
+num_res_blocks: 2
+ch: 32
+ch_mult: [1,2,4,4]
+
+# Optimizer Settings
+lr: 0.002
+
+# Loss Settings
+w_rec: 1
+w_dice: 1
