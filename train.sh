@@ -1,6 +1,4 @@
 #!/bin/bash
-export HOME=/nfs/home/jhuo/.local/bin
-export PATH=$HOME/.local/bin:$PATH
 
 # bus
 python train.py --config ./configs/bus_train.yaml
