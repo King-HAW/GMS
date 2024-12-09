@@ -5,6 +5,7 @@ This is the official repository of Generative Medical Segmentation (GMS).
 [Paper](https://arxiv.org/pdf/2403.18198.pdf) | [Weights](ckpt)
 
 ## Updates
+- **2024.05.13**: Our work was accepted by AAAI 2025.
 - **2024.05.13**: Code and model weights have been released.
 
 ## Introduction
@@ -105,26 +106,6 @@ sh train.sh
 ```
 
 To change hyper-parameters (batchsize, learning rate, training epochs, etc.), please refer to the dataset training yaml file (e.g. [BUSI training yaml](configs/busi_train.yaml)). We train GMS on an NVIDIA A100 40G GPU with the batchsize set to 8. If you encounter the OOM problem, please try to decrease the batchsize. 
-
-## Trainable Parameters
-Since we freeze the SD VAE and only train the latent mapping model, the trainable parameters of GMS are much fewer than other medical image segmentation models. Note that EGE-UNet is a well-designed lightweight model for medical image segmentation.
-
-![trainable_parameters](assets/trainable_parameters.png)
-
-## Quantitative Segmentation Results
-Quantitative performance on different datasets compared to other models. Best and second-best performances are bold and underlined, respectively. $^\dagger$ indicates fewer trainable parameters than GMS.
-
-![quantitative_results](assets/quantitative_results.png)
-
-## Visualization Results
-
-![qualitative_results](assets/seg_mask_visualization.png)
-
-## Cross-domain Segmentation Results
-We were surprised to find that the intrinsic domain generalization ability of GMS is much powerful than other segmentation models, even better than some methods (MixStyle and DSU) that were designed for the domain generalization problem.
-
-![cross_domain_quantitative_results](assets/cross_domain_quantitative.png)
-
 
 ## Citation
 If you use this code for your research, please consider citing our paper.
