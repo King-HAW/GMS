@@ -5,7 +5,7 @@ This is the official repository of Generative Medical Segmentation (GMS).
 [Paper](https://arxiv.org/pdf/2403.18198.pdf) | [Weights](ckpt)
 
 ## Updates
-- **2024.05.13**: Our work was accepted by AAAI 2025.
+- **2024.12.09**: Our work was accepted by AAAI 2025.
 - **2024.05.13**: Code and model weights have been released.
 
 ## Introduction
